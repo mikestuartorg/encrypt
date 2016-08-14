@@ -1,4 +1,4 @@
-# encryption
+# Encrypt API
 
 ## Overview
 
