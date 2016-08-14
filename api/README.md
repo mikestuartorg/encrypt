@@ -32,6 +32,7 @@ like SoapUI, Postman, or curl:
 
 ```
 $ curl -k -H "Content-Type:text/plain" -d '6bx%S4=p#W' https://localhost:8443/api/service/encrypt
+{cipher}bf58b5a05fc65f2ab8b62e34a1df1b4888494644b992276464f8c3ed8190bf26
 ```
 
 You will get a different value each time if you submit this request more than once, but all
