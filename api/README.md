@@ -76,14 +76,13 @@ Add dependency management:
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-parent</artifactId>
-                <version>1.0.2.RELEASE</version>
+                <version>Brixton.SR4</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
 ```
-
 and the following dependencies:
 
 ```
