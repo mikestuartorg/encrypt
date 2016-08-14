@@ -54,7 +54,9 @@ spring:
 
 #### Dependencies
 
-+-----+
+Add dependency management:
+
+```
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -66,11 +68,11 @@ spring:
             </dependency>
         </dependencies>
     </dependencyManagement>
-+-----+
+```
 
- [[3]] And include the following dependencies:
+and the following dependencies:
 
-+-----+
+```
          <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter</artifactId>
@@ -80,4 +82,4 @@ spring:
             <artifactId>spring-security-rsa</artifactId>
             <version>1.0.1.RELEASE</version>
         </dependency>
-+-----+
+```
