@@ -1,0 +1,13 @@
+# to protect key-store-password, an external copy of this file should be created by hosting with
+# values set accordingly and the file read protected
+server:
+  address: ${address:localhost}
+  port: ${port:8443}
+  ssl:
+    key-store: file:keystore.jks
+    key-store-password: changeit
+    key-password: changeit
+#    tomcat:
+#        remote_ip_header: x-forwarded-for
+#        protocol_header: x-forwarded-proto
+#        internal_proxies: 192\.168\.\d{1,3}\.\d{1,3}

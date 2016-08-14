@@ -1,0 +1,4 @@
+# Make an application.properties available on the classpath to all applications in an environment,
+# change the encrypt.key value so that it is unique between environments, and finally,
+# be sure the file is readable only by the PID owner (such as seadmin)
+encrypt.key=password
