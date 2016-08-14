@@ -31,8 +31,15 @@ Encrypt a property using the REST endpoint appropriate for the environment. Use 
 like SoapUI, Postman, or curl:
 
 ```
-$ curl -k -H "Content-Type:text/plain" -d '6bx%S4=p#W' https://localhost:8443/api/service/encrypt
-{cipher}bf58b5a05fc65f2ab8b62e34a1df1b4888494644b992276464f8c3ed8190bf26
+$ curl -k -i -H "Content-Type:text/plain" -d '6bx%S4=p#W' https://localhost:8443/api/service/encrypt
+/localhost:8443/api/service/encrypt
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 72
+Date: Sun, 14 Aug 2016 13:56:38 GMT
+
+{cipher}d657cba4408e4beafb341bce83430d6cc8817e9a226e2fdd329357fd8d02860b
 ```
 
 You will get a different value each time if you submit this request more than once, but all
