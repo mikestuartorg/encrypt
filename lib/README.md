@@ -22,6 +22,29 @@ Set an environment variable for ENCRYPT_KEY.
 
 TODO
 
+## CLI
+
+The usage is displayed if no arguments are provided:
+
+```
+$ java -jar target/encrypt-lib-1.0.0.jar 
+Missing required option: [-d, -e]
+usage: tax-encryption
+ -d,--decrypt
+ -e,--encrypt
+ -p,--password <arg>
+```
+
+To encrypt and decrypt a value with a specified key:
+ 
+```
+$ java -jar target/encrypt-lib-1.0.0.jar -e '6bx%S4=p#W' -p darwin
+ahzeQslTIjxbKuAeElP+kNKIU33i1vptB/sNIHL9Fxg=
+
+$ java -jar target/encrypt-lib-1.0.0.jar -d 'ahzeQslTIjxbKuAeElP+kNKIU33i1vptB/sNIHL9Fxg=' -p darwin
+6bx%S4=p#W
+```
+ 
 ## Usage
 
 Include the following dependency:
